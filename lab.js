@@ -57,17 +57,17 @@ let rain = true;
 */
 
 //CODE HERE
-if(temperature >= 80 && rain === true){
+if(temperature >= 80 && rain){
   console.log("One should wear a t-shirt and take an umbrella.");
-} else if(temperature < 80 && temperature > 60 && rain === true){
+} else if(temperature < 80 && temperature > 60 && rain){
   console.log("One should wear a rain-jacket.");
-} else if(temperature <= 60 && rain === true){
+} else if(temperature <= 60 && rain){
   console.log("One should wear a jacket and carry an umbrella.");
-} else if(temperature >= 80 && rain === false){
+} else if(temperature >= 80 && rain){
   console.log("One should wear a t-shirt and not take an umbrella.");
-} else if(temperature < 80 && temperature > 60 && rain === false){
+} else if(temperature < 80 && temperature > 60 && rain){
   console.log("One should wear a small jacket.");
-} else if(temperature <= 60 && rain === false){
+} else if(temperature <= 60 && rain){
   console.log("One should wear a heavy jacket.");
 }
 ////////// PROBLEM 5 //////////
@@ -125,12 +125,21 @@ while(score < passingScore){
 */
 
 //CODE HERE
+let changeMyMind = true;
+
+if(changeMyMind){
+  let changeMyMind = false;
+} else {
+  let changeMyMind = true;
+}
 
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
+changeMyMind !== changeMyMind;
 
+console.log(changeMyMind);
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
@@ -139,3 +148,9 @@ let z = 5;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+while(z > 0) {
+  for(let i = z; i > 0; i--){
+    console.log(i);
+  }
+  z--;
+}
